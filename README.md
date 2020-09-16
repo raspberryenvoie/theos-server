@@ -18,9 +18,12 @@ Or on your existing repository, create a new workflow with [this content](https:
 WebURL: https://tmate.io/t/urRkvvNuJqBqSwrDMLp49E7zD
 SSH: ssh urRkvvNuJqBqSwrDMLp49E7zD@sfo2.tmate.io
 ```
-Copy and paste `ssh something.tmate.io` into your terminal (on Windows, use Putty and write `something.tmate.io` in the Host Name file) to connect to the server via SSH.
+5. Copy and paste `ssh something.tmate.io` into your terminal (on Windows, use Putty and write `something.tmate.io` in the Host Name field) to connect to the server via SSH.
 
-Note: All the files and directories contained in your repository will be available on the server.
+Notes:
+- All the files and directories contained in your repository will be available on the server.
+- Don't do anything sensitive on the server such as typing password because anyone could access the server. Store them in [encrypted secrets](https://docs.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets).
+- If your repository isn't public, you will have a limit of 2,000 mins of GitHub Actions usage in private repositories.
 
 # Credits
 - [Theos](https://github.com/theos) for [Theos](https://github.com/theos/theos)
